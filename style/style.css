@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url('/assets/img/background.png') repeat;
+}
+
+.navigation{
+    list-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+}
