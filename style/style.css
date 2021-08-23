@@ -1,12 +1,96 @@
+
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff; 
+    
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(43, 43, 43); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
 body{
     background: url('/assets/img/background.png') repeat;
+    height: 1000px;
+}
+/*Navigation style*/
+header{
+    width: 100%;
+    height: 7vh;
+    border: 3px solid black;
+    background-color: white;
+    position: fixed;
+}
+.nav-container{
+    height: 100%;
+    position: relative;
+}
+.navigation{
+    height: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 1%;
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    transition: 250ms ease-in-out;
+}
+.navigation li a:hover{
+    letter-spacing: 3px;
+}
+/*Account style*/
+.user-img{
+    width: 5vh;
+    cursor: pointer;
 }
 
-.navigation{
+.account-container{
+    display: none;
+    background-color: white;
+    position: absolute;
     list-style: none;
+    right: 0;
+    margin: 3px;
+    width: 10%;
+}
+.account-container-show{
+    display: block;
+}
+.account-container li{
+    text-align: center;
+    background-color: white;
+    padding: 10%;
+}
+.account-container li a{
     text-decoration: none;
-    text-decoration-line: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 250ms ease-in-out;
+}
+.account-container li a:hover{
+    letter-spacing: 3px;
+}
+/*Main style*/
+.main{
+    width: 100%;
+    padding: 2%;
 }
